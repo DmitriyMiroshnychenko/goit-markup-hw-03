@@ -38,6 +38,13 @@ header .container {
   display: flex;
   justify-content: space-between;
 }
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
 
 .nav,
 .links,
@@ -48,17 +55,22 @@ header .container {
 /* LOGO */
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: var(--accent-color);
+   display: flex;
+   align-items: center;
+   margin-right: 93px;
+  font-weight: bold;
   font-size: 26px;
-  line-height: 1.19;
-  display: flex;
-  align-items: center;
-  margin-right: 93px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
 .logo-color_black {
   color: var(--logo-color);
+}
+
+.logo-color_white {
+color: #ffffff;
 }
 
 .link {
@@ -88,10 +100,12 @@ header .container {
 }
 
 .hero {
-  background-color: #2f303a;
   padding: 200px 0;
+  background-color: #2f303a;
+  max-width: 1600px;
+  margin: 0 auto;
 }
-
+/*-----ЗАГОЛОВОК----*/
 .hero-title {
 font-weight: 900;
   font-size: 44px;
@@ -104,7 +118,7 @@ font-weight: 900;
   margin: 0 auto;
   margin-bottom: 30px;
 }
-/* BUTTON */
+/* ----BUTTON ----*/
 .hero-btn {
   font-family: "Roboto", sans-serif;
    font-weight: bold;
@@ -126,84 +140,124 @@ font-weight: 900;
 {
   background: #188ce8;
 }
-
-.hide-title {
+/*----СКРЫТЫЙ ЗАГОЛОВОК-----*/
+.hide-elem {
   width: 1px;
   height: 1px;
   opacity: 0;
   overflow: hidden;
 }
 
-.row {
+.favore {
+  padding-bottom:  0px;
+}
+
+.favore-list {
   display: flex;
   justify-content: space-between;
 }
 
-.benefit-card-title {
+.favore-item:not(:last child) {
+  margin-right: 30px;
+}
+
+.favore-title {
+  margin-bottom: 10px;
   font-weight: bold;
 font-size: 14px;
 line-height: 1.19px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-margin-bottom: 10px;
+color: var(--title-text-color);
 }
 
-.benefit-card {
-width: calc((100% - 90px) / 4);
 }
-
-.benefit-card-text {
+/*---ТЕКСТ К ЗАГОЛОВКУ С ПРИИМУЩЕСТВОМ---*/ 
+.favore-text {
   font-size: 14px;
 line-height: 1,71px;
 letter-spacing: 0.03em;
 color: var(--primary-text-color)
 }
 
-.padding-top-0 {
-  padding-top: 0;
-}
-
 .section-title {
-  text-align: center;
+  margin-bottom: 50px;
   font-weight: bold;
 font-size: 36px;
-line-height: 1.16px;
+line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
-color: var(--title-text-color);
-margin-bottom: 50px;
+color: var(--title-text-color)
 }
 
-.go-about-card {
-  width: calc((100% - 60px) / 3);
-}
-
-.comanda {
-  color: #f5f4fa;
+.command-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 
+.go-about-list {
+  display: flex;
+  justify-content: space-between;
+}
 
+.command {
+background: #F5F4FA;
+}
 
+.card {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12) 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2)
+  border-radius: 0px 0px 4px 4px
+  width calc((100% - 90px) / 4)
+}
 
+.card-info {
+  padding: 30px 0;
+  text-align: center;
+}
 
+.card-title {
+   font-weight: 500;
+  font-size: 16px
+line-height: 19px
+Letter spacing: 0.03em
+color: var( --title-text-color)
+margin-bottom: 10px;
+}
+
+.card-text {
+font-size: 16px
+Line-height: 19px
+Line height: 100%
+Letter spacing: 0.03em
+color var(--primary-text-color)
+}
 
 /* FOOTER */
 
-
-
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
 }
 
-/* SECTION WITH BANNER */
-
-
-  
+.footer-left-box .logo {
+  margin-bottom: 20px;
 }
 
+.footer-contact-item {
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color)
+   font-style: normal;
+  }
 
-
-
+.footer-contact-item a {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 60px 111px;
 }
+
 
 /* PORTFOLIO */
 
