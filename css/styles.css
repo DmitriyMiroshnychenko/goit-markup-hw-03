@@ -71,7 +71,7 @@ ul li {
 }
 
 .logo-color_white {
-color: #ffffff;
+color: var(--primary-white-color);
 }
 
 .link {
@@ -224,7 +224,7 @@ background: #F5F4FA;
   font-size: 16px
 line-height: 19px
 Letter spacing: 0.03em
-color: var( --title-text-color)
+color: var(--title-text-color);
 margin-bottom: 10px;
 }
 
@@ -248,15 +248,17 @@ color var(--primary-text-color)
 }
 
 .footer-contact-item {
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  Font size: 14px
+Line height: 24px
+Line height: 146%
   color: var(--primary-white-color)
    font-style: normal;
+
   }
 
 .footer-contact-item a {
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 60px 111px;
+  margin-bottom: 60px 0;
 }
 
 
